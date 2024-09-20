@@ -1,5 +1,5 @@
 #include <iostream>
-    #include <filesystem>
+#include <filesystem>
 #include <vector>
 #include <string>
 #include <sys/types.h>
@@ -11,6 +11,8 @@
 
 namespace fs = std::filesystem;
 
+// Function to show an image using feh
+// Returns the PID of the child process
 pid_t showImage(const fs::path& imagePath) {
     pid_t pid = fork();
 
@@ -29,6 +31,8 @@ pid_t showImage(const fs::path& imagePath) {
     return pid;
 }
 
+// Function to process an image
+// Prompts the user to enter categories for the image
 void processImage(const fs::path& imagePath, const fs::path& targetDir, pid_t& pid) {
     std::vector<std::string> categories;
     std::string category;
