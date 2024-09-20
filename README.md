@@ -15,3 +15,4 @@ The program then creates directories for each category and creates symlinks to t
 
 I am going to use this in conjunction with the Coursera Guided Project [Basic Image Classification with TensorFlow](https://www.coursera.org/projects/tensorflow-beginner-basic-image-classification) to categorize images for training a model.
 
+Most of this code was written using [ChatGPT](https://chatgpt.com/share/66edea05-4230-8007-bddb-c1c3e124837e).
